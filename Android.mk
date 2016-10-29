@@ -1,0 +1,11 @@
+LOCAL_PATH := $(call my-dir)
+
+# Install GooglePlay
+include $(CLEAR_VARS)
+LOCAL_MODULE := GooglePlay
+LOCAL_SRC_FILES := GooglePlay.apk
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_TAGS := optional
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_PRIVILEGED_MODULE := true
+include $(BUILD_PREBUILT)
